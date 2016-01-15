@@ -8,7 +8,7 @@ The site is broken down like this:
     - fonts
     - img
     - js
-    index.html
-    favicon.png
+    - index.html
+    - favicon.png
 
 The site is based off of the template Buttefly at: http://designscrazed.org/business-website-templates/
