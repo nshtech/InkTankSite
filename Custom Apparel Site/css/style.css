@@ -205,7 +205,7 @@ p{
 	}
 	
 .top_cont_inner{
-	/*background:url(../img/front_page.png) no-repeat right bottom;*/
+	background:url(../img/white_pad.png) no-repeat right bottom;
 	}
 	
 .top_content{
@@ -240,7 +240,7 @@ p{
 	}
 	
 .top_left_cont h1{
-	font-size:60px;
+	font-size:100px;
 	color:#1005A1;
 	margin:0 0 20px 0;
 	text-align:left;

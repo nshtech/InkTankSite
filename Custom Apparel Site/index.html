@@ -79,7 +79,7 @@ function resizeText() {
         <ul class="toggle">
           <li><a href="#top_content">Home</a></li>
           <li><a href="#service">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <<li><a href="#contact">Contact</a></li>
         </ul>
         <ul class="">
           <li><a href="#top_content">Home</a></li>
@@ -104,7 +104,8 @@ function resizeText() {
               <h2>creating shirts that
                 make you stop &amp; stare</h2>
               <p> </p>
-              <a href="#service" class="learn_more2">Learn more</a> </div>
+              <a href="#service" class="learn_more2">Learn more</a> <br>
+              <a href="#contact" class="learn_more2">Sign Up</a> </div>
           </div>
           <div class="col-lg-7 col-sm-5"> </div>
         </div>
@@ -117,7 +118,7 @@ function resizeText() {
 <!--Service-->
 <section  id="service">
   <div class="container">
-    <h2>Services</h2>
+    <h2>Why Ink Tank?</h2>
     <div class="service_area">
       <div class="row">
         <div class="col-lg-4">
@@ -170,10 +171,10 @@ function resizeText() {
         </div>
         <div class="col-lg-6 wow fadeInUp delay-06s">
           <div class="form">
-            <input class="input-text animated wow flipInY delay-02s" type="text" id="name" value="Your Name *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+            <!--<input class="input-text animated wow flipInY delay-02s" type="text" id="name" value="Your Name *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">-->
             <input class="input-text animated wow flipInY delay-04s" type="text" id="email" value="Your E-mail *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
-            <textarea class="input-text text-area animated wow flipInY delay-06s" id="message" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">Your Message</textarea>
-            <input class="input-btn animated wow flipInY delay-08s" onclick="myFunction(document.getElementById('name').value, document.getElementById('email').value, document.getElementById('message').value)" type="submit" value="send message">
+            <!--<textarea class="input-text text-area animated wow flipInY delay-06s" id="message" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">Your Message</textarea>-->
+            <input class="input-btn animated wow flipInY delay-08s" onclick="myFunction(document.getElementById('name').value, document.getElementById('email').value, document.getElementById('message').value)" type="submit" value="join mailing list">
           </div>
         </div>
       </div>
@@ -289,7 +290,7 @@ $(window).load(function(){
 
 <script type="text/javascript">
 
-document.getElementById("name").className += " formInvalid"; //add the class .formInvalid to your element
+//document.getElementById("name").className += " formInvalid"; //add the class .formInvalid to your element
 document.getElementById("email").className += " formInvalid"; //add the class .formInvalid to your element
 console.log("Added form elements to invalid class");
 </script>
