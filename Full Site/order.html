@@ -88,7 +88,28 @@
 		<br>
 		<br>
 		
-		<img id="mask" src="images/T-Shirt_Front.png" class="col-md-12 col-sm-12 col-xs-12 hidden-xs" height="auto" alt="Tank Top" style="padding:0; background-color:#FFF">
+<div class="mainRunner">
+    <img id="mask" src="images/T-Shirt_Front.png" class="col-md-12 col-sm-12 col-xs-12 hidden-xs img1" height="auto" alt="Tank Top" style="padding:0; background-color:#FFF">
+    <img class="img2" src="images/Transparent.png" id="prev" border="none" height="100" width="100" />
+</div>
+
+		<div style="float: right; padding-right: 175px; padding-top:200px;">
+			Thoughts?
+			<br>
+			<br>
+			<input type="radio" name="thoughts" checked="checked">This is awesome</input>
+			<br>
+			<input type="radio" name="thoughts">Talk to someone about changes</input>
+			<br>
+			<input type="radio" name="thoughts">This is not awesome, please help</input>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<a href="" class="more" style="text-align: center;">Continue</a>
+		</div>
 
 		<!-- Multiple Radios -->
 		<div class="form-group">
@@ -215,6 +236,36 @@
 		</div>
 
 		<!--</fieldset>-->
+		<br>
+		<br>
+		Upload your design here
+		<br>
+		<br>
+		<input type="file" onchange="previewFile()"><br>
+		<!--<img id="prev" src="" height="100" width="100" alt="Image preview...">-->
+
+		<script>
+		   function previewFile(){
+		       var preview = document.getElementById("prev");
+		       var file    = document.querySelector('input[type=file]').files[0]; 
+		       var reader  = new FileReader();
+
+		       reader.onloadend = function () {
+		           preview.src = reader.result;
+		       }
+
+		       if (file) {
+		           reader.readAsDataURL(file);
+		       } else {
+		           preview.src = "";
+		       }
+		  }
+
+		  // Modified the code from this question: http://stackoverflow.com/questions/22087076/how-to-make-a-simple-image-upload-using-javascript-html
+		  </script>
+		  <br>
+		  <br>
+
 		</form>
 	</div>
 </body>
