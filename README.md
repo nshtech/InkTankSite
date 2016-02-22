@@ -2,7 +2,15 @@
 
 The site is broken down like this:
 
-- Custom Apparel Site
+- Full Site
+	- css
+	- images
+	- index.html
+	- orders.html
+	- design.html
+
+
+- Demo Site
 
     - css
     - fonts
