@@ -19,5 +19,5 @@ The site is broken down like this:
     - index.html
     - favicon.png
 
-
-The site is based off of the template [Buttefly](http://designscrazed.org/business-website-templates/)
+The full site is based off of the template [Custom Shirt Web Template](https://freewebsitetemplates.com/templates/page-13)
+The demo site is based off of the template [Buttefly](http://designscrazed.org/business-website-templates/)

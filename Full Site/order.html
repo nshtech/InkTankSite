@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div id="header">
-		<div>
+		<div class="bodyBG">
 			<div id="navigation">
 				
 				<ul id="primary">
@@ -22,38 +22,66 @@
 						<a href="design.html"><span>Design</span></a>
 					</li>
 				</ul>
-				<!--<ul id="secondary">
-					<li>
-						<a href="women.html"><span>Women</span></a>
-					</li>
-					<li>
-						<a href="blog.html"><span>Blog</span></a>
-					</li>
-					<li>
-						<a href="contact.html"><span>Contact</span></a>
-					</li>
-				</ul>
-			
-			</div>
-		-->
-			
-			<a href="index.html" id="logo"><img src="images/logo.png" alt="LOGO"></a>
+			<a href="index.html" id="logo"><img src="images/Logo.jpeg" alt="LOGO"></a>
 		</div>
 	</div>
-	<!--<div id="adbox">
-		<h1>Design an Awesome Shirt With Ink Tank</h1>
-		
-	</div>-->
+	<div id="body" class="bodyBG">
+		<script type="text/javascript">
+			function clicked(value, id){
+				var index = id.substring(7, id.length);
+				//console.log(index);
 
+				var color;
 
+				if (index == 0) {// White
+					color = '#FFF';
+				} else if (index == 1){// Black
+					color = '#1E1E1E';
+				} else if (index == 2){// Ash
+					color = '#c9c9c5';
+				} else if (index == 3){// Kelly Green
+					color = '#0f7355';
+				} else if (index == 4){// Lemon Zest
+					color = '#f5d469';
+				} else if (index == 5){// Navy
+					color = '#2d2f3b';
+				} else if (index == 6){// Orange
+					color = '#eb4e3d';
+				} else if (index == 7){// Red
+					color = '#cc163e';
+				} else if (index == 8){// Pool Blue
+					color = '#63becf';
+				} else if (index == 9){// Royal Blue
+					color = '#224c8c';
+				} else if (index == 10){// Caribbean Blue
+					color = '#178eb3';
+				} else if (index == 11){// Charcoal
+					color = '#585459';
+				} else if (index == 12){// Green Apple
+					color = '#4d8f58';
+				} else if (index == 13){// Heather Dark Grey
+					color = '#212a30';
+				} else if (index == 14){// Heather Grey
+					color = '#89848a';
+				} else if (index == 15){// Hot Pink
+					color = '#de497d';
+				} else if (index == 16){// Independent Red
+					color = '#8c2635';
+				} else {
+					color = '#FFF';
+				}
+				
+				//console.log("Color: " + color);
 
-	<div id="body">
+				document.getElementById("mask").style.backgroundColor = color;
+			}
+
+		</script>
 		<form class="form-horizontal">
 		<!--<fieldset>-->
 
 		<!-- Form Name -->
 			<div id="adbox">
-				<br>
 				<h1>Pick a T-Shirt</h1>
 			</div>
 		<!--<legend>Pick a T-Shirt</legend>-->
@@ -83,103 +111,103 @@
 		  <div class="col-md-4">
 		  <div class="radio">
 		    <label for="colors-0">
-		      <input type="radio" name="colors" id="colors-0" value="1" checked="checked">
+		      <input type="radio" name="colors" id="colors-0" value="1" onclick="clicked(value, id)" checked="checked">
 		      White
 		    </label>
 			</div>
 		  <div class="radio">
 		    <label for="colors-1">
-		      <input type="radio" name="colors" id="colors-1" value="2">
+		      <input type="radio" name="colors" id="colors-1" value="2" onclick="clicked(value, id)">
 		      Black
 		    </label>
 			</div>
 		  <div class="radio">
 		    <label for="colors-2">
-		      <input type="radio" name="colors" id="colors-2" value="3">
+		      <input type="radio" name="colors" id="colors-2" value="3" onclick="clicked(value, id)">
 		      Ash
 		    </label>
 			</div>
 		  <div class="radio">
 		    <label for="colors-3">
-		      <input type="radio" name="colors" id="colors-3" value="4">
+		      <input type="radio" name="colors" id="colors-3" value="4" onclick="clicked(value, id)">
 		      Kelly Green
 		    </label>
 			</div>
 		  <div class="radio">
 		    <label for="colors-4">
-		      <input type="radio" name="colors" id="colors-4" value="5">
+		      <input type="radio" name="colors" id="colors-4" value="5" onclick="clicked(value, id)">
 		      Lemon Zest
 		    </label>
 			</div>
 		  <div class="radio">
 		    <label for="colors-5">
-		      <input type="radio" name="colors" id="colors-5" value="6">
+		      <input type="radio" name="colors" id="colors-5" value="6" onclick="clicked(value, id)">
 		      Navy
 		    </label>
 			</div>
 		  <div class="radio">
 		    <label for="colors-6">
-		      <input type="radio" name="colors" id="colors-6" value="7">
+		      <input type="radio" name="colors" id="colors-6" value="7" onclick="clicked(value, id)">
 		      Orange
 		    </label>
 			</div>
 		  <div class="radio">
 		    <label for="colors-7">
-		      <input type="radio" name="colors" id="colors-7" value="8">
+		      <input type="radio" name="colors" id="colors-7" value="8" onclick="clicked(value, id)">
 		      Red
 		    </label>
 			</div>
 		  <div class="radio">
 		    <label for="colors-8">
-		      <input type="radio" name="colors" id="colors-8" value="9">
+		      <input type="radio" name="colors" id="colors-8" value="9" onclick="clicked(value, id)">
 		      Pool Blue
 		    </label>
 			</div>
 		  <div class="radio">
 		    <label for="colors-9">
-		      <input type="radio" name="colors" id="colors-9" value="10">
+		      <input type="radio" name="colors" id="colors-9" value="10" onclick="clicked(value, id)">
 		      Royal Blue
 		    </label>
 			</div>
 		  <div class="radio">
 		    <label for="colors-10">
-		      <input type="radio" name="colors" id="colors-10" value="11">
+		      <input type="radio" name="colors" id="colors-10" value="11" onclick="clicked(value, id)">
 		      Caribbean Blue
 		    </label>
 			</div>
 		  <div class="radio">
 		    <label for="colors-11">
-		      <input type="radio" name="colors" id="colors-11" value="12">
+		      <input type="radio" name="colors" id="colors-11" value="12" onclick="clicked(value, id)">
 		      Charcoal
 		    </label>
 			</div>
 		  <div class="radio">
 		    <label for="colors-12">
-		      <input type="radio" name="colors" id="colors-12" value="13">
+		      <input type="radio" name="colors" id="colors-12" value="13" onclick="clicked(value, id)">
 		      Green Apple
 		    </label>
 			</div>
 		  <div class="radio">
 		    <label for="colors-13">
-		      <input type="radio" name="colors" id="colors-13" value="14">
+		      <input type="radio" name="colors" id="colors-13" value="14" onclick="clicked(value, id)">
 		      Heather Dark Grey
 		    </label>
 			</div>
 		  <div class="radio">
 		    <label for="colors-14">
-		      <input type="radio" name="colors" id="colors-14" value="15">
+		      <input type="radio" name="colors" id="colors-14" value="15" onclick="clicked(value, id)">
 		      Heather Grey
 		    </label>
 			</div>
 		  <div class="radio">
 		    <label for="colors-15">
-		      <input type="radio" name="colors" id="colors-15" value="16">
+		      <input type="radio" name="colors" id="colors-15" value="16" onclick="clicked(value, id)">
 		      Hot Pink
 		    </label>
 			</div>
 		  <div class="radio">
 		    <label for="colors-16">
-		      <input type="radio" name="colors" id="colors-16" value="17">
+		      <input type="radio" name="colors" id="colors-16" value="17" onclick="clicked(value, id)">
 		      Independent Red
 		    </label>
 			</div>
@@ -188,30 +216,6 @@
 
 		<!--</fieldset>-->
 		</form>
-	</div>
-	<div id="footer">
-		<div class="background">
-			<div class="body">
-				<div class="subscribe">
-					<!--<h3>Get Weekly Newsletter</h3>
-					<form action="index.html" method="post">
-						<input type="text" value="" class="txtfield">
-						<input type="submit" value="" class="button">
-					</form>-->
-				</div>
-				<div class="posts">
-					<!--<h3>Latest Post</h3>
-					<p>
-						Integer sit amet erat at nulla sodales fermentum vel quis mi. <br> Morbi bibendum <a href="#header">...</a> <span>12/05/2011</span>
-					</p>-->
-				</div>
-				<!--<div class="connect">
-					<h3>Follow Us:</h3>
-					<a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook"></a> <a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter"></a> <a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus"></a>
-				</div>-->
-			</div>
-		</div>
-		<!--<span id="footnote"> <a href="index.html">Moonstrosity Custom Shirts</a> &copy; 2012 | All Rights Reserved.</span>-->
 	</div>
 </body>
 </html>
